@@ -105,7 +105,7 @@ const getDetailsMovie = async (idMovie) => {
 	// Etape 1 : faire la requete et recup les données
 	try {
 		const response = await fetch(
-			`http://movies-api.julienpoirier-webdev.com/infos/movies/${idMovie}`
+			`https://movies-api.julienpoirier-webdev.com/infos/movies/${idMovie}`
 		);
 		const data = await response.json();
 		displayDetails(data);
@@ -169,7 +169,7 @@ const displayDetails = (movie) => {
 
 const getCollection = (collectionId) => {
 	fetch(
-		`http://movies-api.julienpoirier-webdev.com/infos/collections/${collectionId}`
+		`https://movies-api.julienpoirier-webdev.com/infos/collections/${collectionId}`
 	)
 		.then((response) => {
 			response
